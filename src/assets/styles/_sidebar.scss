@@ -78,7 +78,7 @@
       .nav-link {
         @include display-flex;
         @include align-items(center);
-        white-space: nowrap;
+        //white-space: nowrap;
         padding: $sidebar-menu-padding-y 10px $sidebar-menu-padding-y $sidebar-menu-padding-x;
         color: $sidebar-menu-color;
         @include transition-duration(0.45s);
@@ -87,7 +87,7 @@
         height: 46px;
         border-radius: 0px 100px 100px 0px;
         cursor: pointer;
-        
+
         i {
           color: inherit;
           &.menu-icon {
@@ -148,7 +148,7 @@
             top: 0;
           }
           .menu-title {
-            color: $sidebar-menu-active-color;        
+            color: $sidebar-menu-active-color;
           }
           i {
             color: #ffffff;
@@ -227,7 +227,7 @@
             h5 {
               white-space: nowrap;
             }
-          } 
+          }
           .profile-pic {
             display: flex;
             align-items: center;
@@ -385,7 +385,7 @@
             }
           }
         }
-  
+
         &:nth-child(5n+2) {
           .nav-link {
             .menu-icon {
@@ -395,7 +395,7 @@
             }
           }
         }
-  
+
         &:nth-child(5n+3) {
           .nav-link {
             .menu-icon {
@@ -405,7 +405,7 @@
             }
           }
         }
-  
+
         &:nth-child(5n+4) {
           .nav-link {
             .menu-icon {
@@ -415,7 +415,7 @@
             }
           }
         }
-  
+
         &:nth-child(5n+5) {
           .nav-link {
             .menu-icon {
@@ -426,10 +426,10 @@
           }
         }
       }
-    
-      
-    
-    
+
+
+
+
   }
 }
 

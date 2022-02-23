@@ -59,7 +59,7 @@
     -ms-transition: width $action-transition-duration $action-transition-timing-function;
     box-shadow: $navbar-box-shadow;
     -webkit-box-shadow: $navbar-box-shadow;
-    -moz-box-shadow: $navbar-box-shadow;  
+    -moz-box-shadow: $navbar-box-shadow;
     color: $navbar-menu-color;
     padding-left: 15px;
     padding-right: 15px;
@@ -178,7 +178,7 @@
             font-weight: normal;
             align-items: center;
             .navbar-profile-name {
-              white-space: nowrap;
+              //white-space: nowrap;
               margin-left: 1rem;
             }
             i {

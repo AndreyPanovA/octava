@@ -1,5 +1,5 @@
 export const home = {
-    ant_hwv: "19.15.1.3",
+    ant_hwv: "19.15.1.3 mook data",
     cgminer_version: "2.0.0 rwglr",
     curtime: "19:59:47",
     dnsservers: "",
