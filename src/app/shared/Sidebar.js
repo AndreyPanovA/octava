@@ -20,7 +20,11 @@ const NAV_CONFIG = {
         {title:"Система", nestedRoutes:links},
         {title:"Конфигурация майнера", nestedRoutes:links},
         {title:"Статус майнера", nestedRoutes:links},
-        {title:"Сеть", nestedRoutes:links},
+        {title:"Сеть", nestedRoutes:[
+                {title:"Настройки", url: "/network/settings"},
+                {title:"Диагностика", url:"/network/diagnostic/"}
+            ]
+        },
         {title:"Отчет об ошибках", nestedRoutes:links},
     ]
 }
@@ -152,56 +156,3 @@ class Sidebar extends Component {
 }
 
 export default withRouter(Sidebar);
-// {/*<li className="nav-item profile">*/}
-// {/*  <div className="profile-desc">*/}
-// {/*    <div className="profile-pic">*/}
-// {/*      <div className="count-indicator">*/}
-// {/*        <img className="img-xs rounded-circle " src={require('../../assets/images/faces/face15.jpg')} alt="profile" />*/}
-// {/*        <span className="count bg-success"></span>*/}
-// {/*      </div>*/}
-// {/*      <div className="profile-name">*/}
-// {/*        <h5 className="mb-0 font-weight-normal"><Trans>Henry Klein</Trans></h5>*/}
-// {/*        <span><Trans>Gold Member</Trans></span>*/}
-// {/*      </div>*/}
-// {/*    </div>*/}
-// {/*    <Dropdown alignRight>*/}
-// {/*      <Dropdown.Toggle as="a" className="cursor-pointer no-caret">*/}
-// {/*        <i className="mdi mdi-dots-vertical"></i>*/}
-// {/*      </Dropdown.Toggle>*/}
-// {/*      <Dropdown.Menu className="sidebar-dropdown preview-list">*/}
-// {/*        <a href="!#" className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>*/}
-// {/*          <div className="preview-thumbnail">*/}
-// {/*            <div className="preview-icon bg-dark rounded-circle">*/}
-// {/*              <i className="mdi mdi-settings text-primary"></i>*/}
-// {/*            </div>*/}
-// {/*          </div>*/}
-// {/*          <div className="preview-item-content">*/}
-// {/*            <p className="preview-subject ellipsis mb-1 text-small"><Trans>Account settings</Trans></p>*/}
-// {/*          </div>*/}
-// {/*        </a>*/}
-// {/*        <div className="dropdown-divider"></div>*/}
-// {/*        <a href="!#" className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>*/}
-// {/*          <div className="preview-thumbnail">*/}
-// {/*            <div className="preview-icon bg-dark rounded-circle">*/}
-// {/*              <i className="mdi mdi-onepassword  text-info"></i>*/}
-// {/*            </div>*/}
-// {/*          </div>*/}
-// {/*          <div className="preview-item-content">*/}
-// {/*            <p className="preview-subject ellipsis mb-1 text-small"><Trans>Change Password</Trans></p>*/}
-// {/*          </div>*/}
-// {/*        </a>*/}
-// {/*        <div className="dropdown-divider"></div>*/}
-// {/*        <a href="!#" className="dropdown-item preview-item" onClick={evt =>evt.preventDefault()}>*/}
-// {/*          <div className="preview-thumbnail">*/}
-// {/*            <div className="preview-icon bg-dark rounded-circle">*/}
-// {/*              <i className="mdi mdi-calendar-today text-success"></i>*/}
-// {/*            </div>*/}
-// {/*          </div>*/}
-// {/*          <div className="preview-item-content">*/}
-// {/*            <p className="preview-subject ellipsis mb-1 text-small"><Trans>To-do list</Trans></p>*/}
-// {/*          </div>*/}
-// {/*        </a>*/}
-// {/*      </Dropdown.Menu>*/}
-// {/*    </Dropdown>*/}
-// {/*  </div>*/}
-// {/*</li>*/}

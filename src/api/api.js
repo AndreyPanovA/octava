@@ -70,6 +70,39 @@ class ApiComponent {
     getSystemInfo = async ()=>{
         return await this.get('/cgi-bin/get_system_info.cgi')
     }
+    getNetworkInfo = async ()=>{
+        return await this.get('/cgi-bin/get_network_info.cgi')
+    }
+    updateNetworkInfo = async (data={})=>{
+        return await this.post('/cgi-bin/set_network_conf.cgi',data)
+    }
+   //monitor.html
+    monitor = async  ()=>{
+        return await this.get('/cgi-bin/monitor.cgi')
+    }
+    //watchLog.html
+    getKernelLog = async ()=>{
+        return await this.get('/cgi-bin/get_watchdog_log.cgi')
+    }
+    clearLog = async ()=>{
+        return await this.post('/cgi-bin/clear_watchdog_log.cgi',{})
+    }
+    //upgrade.html
+    resetConf = async ()=>{
+        return await  this.get('/cgi-bin/reset_conf.cgi')
+    }
+    submitRestoreExec = async ()=>{
+        return await  this.get('/cgi-bin/kill_bmminer.cgi')
+    }
+    submitUpgradeExec = async ()=>{
+        return await this.get('/cgi-bin/kill_bmminer.cgi')
+    }
+    // timezone.html
+    getTimeZone = async ()=>{
+        return await this.get('/cgi-bin/get_timezone.cgi')
+    }
+
+
 }
 const API = new ApiComponent();
 
